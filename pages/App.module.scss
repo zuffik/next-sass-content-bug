@@ -1,0 +1,10 @@
+@mixin test {
+  $arg: 1;
+  @content ($arg);
+}
+
+.item {
+  @include test {
+    color: red;
+  }
+}
